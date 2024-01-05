@@ -105,6 +105,7 @@ const RegistrationForm = () => {
   };
 
   return (
+    <section className="px-0 md:px-4">
     <div className="container form_wrapper">
       <ToastContainer />
       <h2> Create User Account</h2>
@@ -363,6 +364,7 @@ const RegistrationForm = () => {
         )}
       </Formik>
     </div>
+    </section>
   );
 };
 
