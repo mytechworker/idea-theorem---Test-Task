@@ -14,3 +14,5 @@ Navigate to the Project Directory: `cd idea-theorem---Test-Task`
 Install Dependencies: `npm i -r`
 
 Run the Development Server: `npm run dev`
+
+[[!Project Demo]](https://www.awesomescreenshot.com/video/23792325?key=1686f0b24039bc8a49c64faeebc15ed5)
