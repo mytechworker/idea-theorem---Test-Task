@@ -7,14 +7,10 @@ This project involves creating a web page for a simple registration process. The
 
 Installation
 
-Clone the Repository
-git clone [repository URL]
+Clone the Repository: `git clone https://github.com/mytechworker/idea-theorem---Test-Task.git`
 
-Navigate to the Project Directory
-cd [project folder]
+Navigate to the Project Directory: `cd idea-theorem---Test-Task`
 
-Install Dependencies
-npm i -r
+Install Dependencies: `npm i -r`
 
-Run the Development Server
-npm run dev
+Run the Development Server: `npm run dev`
