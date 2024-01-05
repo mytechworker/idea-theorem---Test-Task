@@ -15,4 +15,4 @@ Install Dependencies: `npm i -r`
 
 Run the Development Server: `npm run dev`
 
-[[!Project Demo]](https://www.awesomescreenshot.com/video/23792325?key=1686f0b24039bc8a49c64faeebc15ed5)
+[[Project Demo - click here]](https://www.awesomescreenshot.com/video/23792527?key=c68af2302049ded25c1443e4a5a281a8)
