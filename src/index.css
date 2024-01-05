@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Lato:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+.header {
+  @apply px-4 py-4 bg-dark-bg xl:px-40 lg:px-20 md:py-3;
+}
+.logo-wrap {
+  @apply flex flex-wrap items-center justify-between w-full;
+}
+.logo-wrap a {
+  @apply w-full max-w-[148px] md:max-w-[294px];
+}
+.form_wrapper {
+  @apply max-w-full px-0 mx-auto md:px-4 md:max-w-lg;
+
+  h2 {
+    @apply text-xl font-bold text-left md:pt-11 pt-14 pb-5 md:pb-4 md:px-0 px-6 text-[#2C3642];
+  }
+  .form_detail {
+    @apply mx-auto bg-white md:shadow-3xl shadow-none overflow-hidden w-full md:border-none border-t border-t-[#D8E0E9];
+  }
+  .input_label {
+    @apply text-gray-700 text-base font-bold mb-2.5;
+  }
+  .input_group {
+    @apply relative;
+
+    label {
+      @apply absolute text-lg bg-white text-[#4D5C6F];
+      pointer-events: none;
+      left: 8px;
+      top: 12px;
+      padding: 0 5px;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+
+      span {
+        color: #cf4055;
+      }
+    }
+    .input_filed {
+      @apply border rounded w-full py-3.5 px-3.5 text-gray-700 leading-tight border-[#A5B6CD] text-lg text-[#2C3642];
+      box-sizing: border-box;
+      &:focus {
+        outline: none;
+        ~ label {
+          top: -8px;
+          @apply text-xs;
+        }
+      }
+      &:not(:placeholder-shown) {
+        ~ label {
+          top: -8px;
+          @apply text-xs;
+        }
+      }
+      &:not([value=""]):valid {
+        ~ label {
+          top: -8px;
+          @apply text-xs;
+        }
+      }
+      &:not([value=""]):focus {
+        ~ label {
+          top: -8px;
+          @apply text-xs;
+        }
+      }
+    }
+    .label-up{
+      top:-8px;
+      @apply text-xs;
+    }
+  }
+  
+
+  .input_filed:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #2c3642;
+  }
+  .input_filed:autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #2c3642;
+  }
+
+  .input_group.error {
+    .input_filed {
+      @apply border-[#cf4055];
+    }
+    label {
+      @apply text-[#cf4055];
+    }
+    .error_msg {
+      @apply text-[#DA1E28] text-xs pt-0.5;
+    }
+  }
+}
+
+.button_wrapper {
+  @apply flex items-center justify-center mt-20 md:mt-11 gap-3 md:gap-3.5 flex-col md:flex-row py-5 px-6 md:p-0 shadow-4xl md:shadow-none;
+}
+.cancle_btn {
+  @apply bg-white text-[#4790A1] font-bold py-2 px-11 rounded-md border-solid border-2 border-[#4790A1] hover:text-white hover:bg-[#127C95] w-full md:w-auto;
+}
+.submit_btn {
+  @apply bg-[#127C95] text-white font-bold py-2 px-11 rounded-md border-solid border-2 border-[#127C95] hover:text-[#127C95] hover:bg-white  w-full md:w-auto;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./assets/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.toast-message {
+  @apply bg-[#CDFADC] text-lg font-bold rounded text-[#333] py-6 px-4 max-w-[500px] w-full;
+}
+
+
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    bottom: 18%; 
+    top: unset;   
+    left: 50%;    
+    transform: translateX(-50%); 
+  }
+}
+
+.toast-message {
+  @apply  text-lg font-bold rounded text-[#333] md:py-6 md:px-4 p-3  max-w-[500px] w-full;
+}
+.toast-error{
+  @apply bg-[#FFC0C0];
+}
+.sucess_msg{
+  @apply bg-[#CDFADC];
+}

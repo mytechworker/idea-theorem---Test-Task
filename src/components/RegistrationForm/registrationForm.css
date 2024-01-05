@@ -1,0 +1,8 @@
+.formField {
+    margin-bottom: 20px;
+  }
+  
+  .errorMessage {
+    color: red;
+    margin-top: 5px;
+  }
